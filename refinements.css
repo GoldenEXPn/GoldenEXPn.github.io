@@ -25,10 +25,13 @@ h1 {
 
 .hero {
   grid-template-columns: minmax(0, 1.6fr) minmax(230px, .4fr);
+  min-height: 0;
+  align-items: start;
+  padding-block: 54px 64px;
 }
 
 .portrait-wrap {
-  width: min(100%, 290px);
+  width: min(100%, 220px);
   justify-self: center;
 }
 
@@ -47,7 +50,7 @@ h1 {
 
   .portrait-wrap {
     order: 1;
-    width: min(68vw, 270px);
+    width: min(58vw, 220px);
   }
 
   .actions {
