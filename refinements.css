@@ -1,0 +1,60 @@
+/* Small presentation refinements kept separate from the original design system. */
+h1 {
+  font-size: clamp(48px, 6.2vw, 78px);
+}
+
+.lede {
+  font-size: clamp(22px, 2.5vw, 32px);
+  max-width: 700px;
+}
+
+.actions {
+  gap: 14px;
+  margin-top: 38px;
+}
+
+.button {
+  padding: 13px 20px;
+  font-size: 16px;
+}
+
+.text-link {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.hero {
+  grid-template-columns: minmax(0, 1.6fr) minmax(230px, .4fr);
+}
+
+.portrait-wrap {
+  width: min(100%, 290px);
+  justify-self: center;
+}
+
+.portrait-wrap img {
+  aspect-ratio: 4 / 5;
+  object-position: center;
+  border: 7px solid rgba(255, 255, 255, .8);
+  border-radius: 22px;
+  box-shadow: 12px 12px 0 var(--green-soft);
+}
+
+@media (max-width: 760px) {
+  .hero-copy {
+    order: 0;
+  }
+
+  .portrait-wrap {
+    order: 1;
+    width: min(68vw, 270px);
+  }
+
+  .actions {
+    align-items: stretch;
+  }
+
+  .text-link {
+    align-self: center;
+  }
+}
